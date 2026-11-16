@@ -161,9 +161,27 @@
   .puzzle-card h2 {
     font-size: 2rem;
   }
+
+.puzzle-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 20px 0;
 }
 
+.puzzle-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
 
+@media (max-width: 600px) {
+  .puzzle-gallery img {
+    height: 140px;
+  }
+}
   </style>
 </head>
 <body>
@@ -334,6 +352,7 @@
 </section>
 </main>
 
+
 <section class="puzzle-ad">
   <div class="container">
     <div class="puzzle-card">
@@ -359,6 +378,13 @@
 
         <p>Available in multiple shapes and designs.</p>
 
+        <div class="puzzle-gallery">
+          <img src="./WhatsApp%20Image%202026-11-15%20at%209.14.53%20PM.jpeg" alt="Puzzle Design 1">
+          <img src="./WhatsApp%20Image%202026-11-15%20at%209.14.53%20PM%20(2).jpeg" alt="Puzzle Design 2">
+          <img src="./WhatsApp%20Image%202026-11-15%20at%209.14.53%20PM%20(3).jpeg" alt="Puzzle Design 3">
+          <img src="./WhatsApp%20Image%202026-11-15%20at%209.14.53%20PM%20(4).jpeg" alt="Puzzle Design 4">
+        </div>
+
         <div class="puzzle-price">
           EGP 50 / Piece
         </div>
@@ -374,6 +400,7 @@
     </div>
   </div>
 </section>
+
 
 <footer>
   <div class="container">
