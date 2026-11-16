@@ -126,12 +126,28 @@
   box-shadow: 0 15px 45px rgba(0,0,0,.08);
 }
 
-.puzzle-card img {
+.puzzle-card > img {
   display: block;
   width: 100%;
   max-height: 450px;
   object-fit: contain;
   border-radius: 12px;
+}
+
+.puzzle-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.puzzle-gallery img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #ddd;
 }
 
 .puzzle-card h2 {
