@@ -108,6 +108,55 @@
     @media(max-width:850px){.real-gallery{grid-template-columns:1fr 1fr}}
     @media(max-width:520px){.real-gallery{grid-template-columns:1fr}.work-card img{min-height:300px}}
 
+/* Kids Educational Puzzle Advertisement */
+.puzzle-ad {
+  background: #f5f3ef;
+  padding: 80px 0;
+}
+
+.puzzle-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #fff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(0,0,0,.08);
+}
+
+.puzzle-card img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.puzzle-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #101214;
+}
+
+.puzzle-card p {
+  color: #4b4f52;
+  margin-bottom: 18px;
+}
+
+.puzzle-price {
+  color: #a96243;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .puzzle-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -312,6 +361,47 @@
     if(e.target.id === 'lightbox') closeLightbox();
   });
 </script>
+
+<section class="puzzle-ad">
+  <div class="container">
+    <div class="puzzle-card">
+
+      <img src="download.png"
+           alt="Kids Educational Puzzle">
+
+      <div>
+        <div class="eyebrow">
+          SMART STEEL KIDS COLLECTION
+        </div>
+
+        <h2>Educational Puzzles for Kids</h2>
+
+        <p>
+          Fun and educational puzzles with attractive colors
+          and excellent quality.
+        </p>
+
+        <p>
+          Designed to develop children's focus,
+          thinking and problem-solving skills.
+        </p>
+
+        <p>Available in multiple shapes and designs.</p>
+
+        <div class="puzzle-price">
+          EGP 50 / Piece
+        </div>
+
+        <a class="btn"
+           href="https://wa.me/201228957572?text=Hello%2C%20I%20want%20to%20order%20a%20kids%20educational%20puzzle."
+           target="_blank">
+          Order on WhatsApp
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>index.html
